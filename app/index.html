@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudCampus Stay</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">CloudCampus Stay</div>
+      <nav class="nav-links">
+        <a href="#rooms">Rooms</a>
+        <a href="#booking">Booking</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Campus Visit Hotel Booking</p>
+        <h1>Comfortable stays for international students and families visiting campus.</h1>
+        <p class="hero-text">
+          CloudCampus Stay is a simple hotel booking prototype designed for orientation,
+          move-in, campus tours, family visits, and graduation trips.
+        </p>
+        <div class="hero-actions">
+          <a href="#rooms" class="button primary">View Rooms</a>
+          <a href="#booking" class="button secondary">Request Booking</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="rooms" class="section">
+      <div class="container">
+        <h2>Room Options</h2>
+        <p class="section-intro">
+          Choose a stay option based on your campus visit purpose.
+        </p>
+
+        <div class="room-grid">
+          <article class="room-card">
+            <h3>Standard Campus Room</h3>
+            <p class="price">$99 / night</p>
+            <p>
+              Ideal for short campus visits and orientation trips.
+            </p>
+            <ul>
+              <li>Queen bed</li>
+              <li>Free Wi-Fi</li>
+              <li>Campus shuttle nearby</li>
+            </ul>
+          </article>
+
+          <article class="room-card">
+            <h3>Family Visit Suite</h3>
+            <p class="price">$149 / night</p>
+            <p>
+              Designed for parents and family members visiting students.
+            </p>
+            <ul>
+              <li>Two beds</li>
+              <li>Breakfast included</li>
+              <li>Extra luggage space</li>
+            </ul>
+          </article>
+
+          <article class="room-card">
+            <h3>Graduation Weekend Suite</h3>
+            <p class="price">$229 / night</p>
+            <p>
+              A premium stay option for graduation and special campus events.
+            </p>
+            <ul>
+              <li>King bed</li>
+              <li>Lounge area</li>
+              <li>Premium campus view</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="section booking-section">
+      <div class="container booking-layout">
+        <div>
+          <h2>Request a Booking</h2>
+          <p class="section-intro">
+            This form is a frontend prototype. Database integration will be added in a future version.
+          </p>
+        </div>
+
+        <form class="booking-form">
+          <label>
+            Guest Name
+            <input type="text" placeholder="Your name" />
+          </label>
+
+          <label>
+            Email
+            <input type="email" placeholder="you@example.com" />
+          </label>
+
+          <label>
+            Visit Purpose
+            <select>
+              <option>Orientation</option>
+              <option>Move-in</option>
+              <option>Campus Tour</option>
+              <option>Graduation</option>
+              <option>Family Visit</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label>
+            Room Type
+            <select>
+              <option>Standard Campus Room</option>
+              <option>Family Visit Suite</option>
+              <option>Graduation Weekend Suite</option>
+            </select>
+          </label>
+
+          <div class="date-row">
+            <label>
+              Check-in
+              <input type="date" />
+            </label>
+
+            <label>
+              Check-out
+              <input type="date" />
+            </label>
+          </div>
+
+          <button type="button">Submit Request</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2>About This Project</h2>
+        <p>
+          This project demonstrates a highly available web application architecture on AWS.
+          The application is designed to run behind an Application Load Balancer with EC2
+          instances managed by an Auto Scaling Group across multiple Availability Zones.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>CloudCampus Stay | AWS Highly Available Web App Project</p>
+      <p class="server-info">
+        Served by: <span id="instance-info">EC2 instance information will appear here after deployment.</span>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
