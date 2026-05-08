@@ -1,0 +1,16 @@
+# Terraform local files
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Terraform variable files that may contain secrets
+*.tfvars
+!terraform.tfvars.example
+
+# macOS
+.DS_Store
+
+# AWS credentials - never commit these
+.aws/
